@@ -81,12 +81,12 @@ const instructionsElement = document.getElementById("instructions");
 const resultsElement = document.getElementById("results");
 const accelerateButton = document.getElementById("accelerate");
 const decelerateButton = document.getElementById("decelerate");
-const youtubeLogo = document.getElementById("main");
+
 
 setTimeout(() => {
   if (ready) instructionsElement.style.opacity = 1;
   buttonsElement.style.opacity = 1;
-  youtubeLogo.style.opacity = 1;
+
 }, 4000);
 
 // Initialize ThreeJs
@@ -191,7 +191,6 @@ function startGame() {
     scoreElement.innerText = 0;
     buttonsElement.style.opacity = 1;
     instructionsElement.style.opacity = 0;
-    youtubeLogo.style.opacity = 1;
     renderer.setAnimationLoop(animation);
   }
 }
