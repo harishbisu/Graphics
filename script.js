@@ -1057,6 +1057,8 @@ function hitDetection() {
 
       // Another vehicle hits the player
       if (getDistance(playerHitZone2, vehicleHitZone1) < 40) return true;
+      if (getDistance(playerHitZone2, vehicleHitZone2) < 40) return true;
+      if (getDistance(playerHitZone2, vehicleHitZone3) < 40) return true;
     }
   });
 
